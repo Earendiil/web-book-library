@@ -7,7 +7,7 @@ public class InvestmentCalculator {
         double annualRate = 0.10; 
         double monthlyRate = annualRate / 12; 
 
-        int[] years = {2, 5, 10, 12, 15, 20}; // Investment durations in years
+        int[] years = {2, 5, 8, 10, 12, 15, 20, 25}; // Investment durations in years
 
         System.out.printf("%-10s %-20s %-20s %-20s %-20s%n", "Years", "Future Value (€)", "Total Invested (€)", "Starting Capital (€)", "Growth (€)");
         for (int year : years) {
