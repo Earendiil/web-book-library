@@ -1,9 +1,9 @@
-package zCalculatorSP500;
+package calculator;
 
 public class InvestmentCalculator {
     public static void main(String[] args) {
         double startingInvestment = 5000; 
-        double monthlyInvestment = 1000; 
+        double monthlyInvestment = 2000; 
         double annualRate = 0.10; 
         double monthlyRate = annualRate / 12; 
 
@@ -25,5 +25,6 @@ public class InvestmentCalculator {
         // Future Value formula for an annuity with initial capital
         return startingInvestment * Math.pow(1 + monthlyRate, n) +
                monthlyInvestment * ((Math.pow(1 + monthlyRate, n) - 1) / monthlyRate) * (1 + monthlyRate);
+   
     }
 }
